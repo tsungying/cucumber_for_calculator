@@ -4,7 +4,7 @@ Given(/^the input "([^"]*)"$/) do |input|
   @input = input
 end
 
-When(/^the claculator is run$/) do
+When(/^the calculator is run$/) do
   # 嘗試去執行 calc.rb，傳遞儲存在第一步的值，並將第二步輸出結果紀錄起來
   @output = `ruby calc.rb #{@input}`
   # 檢查 Ruby 變數 $? 來確認指令是否成功

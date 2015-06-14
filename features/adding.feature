@@ -2,7 +2,7 @@ Feature: Adding
 
   Scenario Outline: Add two numbers
     Given the input "<input>"
-    When the claculator is run
+    When the calculator is run
     Then the output should be "<output>"
 
     # 在 Examples 中的每一列都會被展開成一個腳本去測試

@@ -11,6 +11,7 @@ When(/^the claculator is run$/) do
   raise("Command faild!") unless $?.success?
 end
 
-Then(/^the output should be "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+Then(/^the output should be "([^"]*)"$/) do |expected_output|
+  expect(@output).to eq(expected_output)
+  # @output.should eq(expected_output)
 end
